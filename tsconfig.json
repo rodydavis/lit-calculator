@@ -3,9 +3,8 @@
     "target": "ES5",
     "lib": ["esnext.array", "esnext", "es2017", "dom"],
     "declaration": true,
-    "declarationMap": true,
     "sourceMap": true,
-    "inlineSources": true,
+    "inlineSources": false,
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -16,6 +15,6 @@
     "skipLibCheck": true,
     "experimentalDecorators": true
   },
-  "include": ["src/**/*"],
+  "include": ["docs/**/*"],
   "exclude": ["node_modules", "**/*.spec.ts"]
 }

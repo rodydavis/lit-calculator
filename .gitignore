@@ -1,4 +1,4 @@
 # Ignores compiled TypeScript files
-**/src/**/*.map
-**/src/**/*.js
-**/src/**/*.d.ts
+# **/docs/**/*.map
+# **/docs/**/*.js
+# **/docs/**/*.d.ts
