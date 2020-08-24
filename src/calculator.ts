@@ -6,9 +6,9 @@ import {
   property,
   // @ts-ignore
 } from "https://unpkg.com/lit-element/lit-element.js?module";
-import "./keypad-input/index.js";
-import "./key-pad/index.js";
-import "./display-output/index.js";
+import "./keypad-input.js";
+import "./key-pad.js";
+import "./display-output.js";
 
 @customElement("app-calculator")
 export class AppCalculator extends LitElement {
@@ -102,7 +102,7 @@ export class AppCalculator extends LitElement {
     this.value += num;
   };
 
-  _clear = () => {
+  clear = () => {
     this.value = "";
     this._staging = "";
     this._value = "";
@@ -148,7 +148,7 @@ export class AppCalculator extends LitElement {
       ></display-output>
       <div id="actions">
         <button
-          @click=${this._clear}
+          @click=${this.clear}
           ?disabled=${this.value === "" && this.mode === ""}
         >
           Clear
